@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="layoutBack">#ADE8F4</color>
+    <color name="visible_hint">#70000000</color>
+    <color name="textFieldBack">#0096C7</color>
+    <color name="boxStrokeColor">#0096C7</color>
+    <color name="hintTextColor">#0096C7</color>
+    <color name="textColor">#000000</color>
+    <color name="buttonColor">#0096C7</color>
+    <color name="cardView">#90E0EF</color>
+</resources>

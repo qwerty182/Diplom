@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentReportAddActivity"
+    android:orientation="vertical"
+    android:background="@color/layoutBack">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layoutBack"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:layout_marginTop="20dp"
+                android:text="Добавление отчета"
+                android:textColor="@color/textColor"/>
+
+            <ImageView
+                android:id="@+id/imageReport"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="noPhoto"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_baseline_insert_photo_24"
+                android:background="@drawable/image_back"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/cardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:translationZ="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textComment"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:hint="Описание"
+                        android:textColorHint="@color/visible_hint"
+                        android:backgroundTint="@color/textFieldBack"
+                        app:boxStrokeColor="@color/boxStrokeColor"
+                        app:hintTextColor="@color/hintTextColor">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editComment"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/textColor"
+                            android:background="@drawable/separator" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/spinnerTypeReport"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Добавить отчет"
+                android:backgroundTint="@color/buttonColor"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:translationZ="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

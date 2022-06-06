@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">МПТ аудитории</string>
+
+    <string-array name="typeReport">
+        <item>Поломка</item>
+        <item>Забыли вещь</item>
+        <item>Кража</item>
+    </string-array>
+
+    <string-array name="build">
+        <item>Нахимовский проспект</item>
+        <item>Нежинская</item>
+    </string-array>
+
+    <string-array name="role">
+        <item>Студент</item>
+        <item>Преподаватель</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>8:30</item>
+        <item>10:10</item>
+        <item>12:00</item>
+        <item>14:00</item>
+        <item>15:40</item>
+    </string-array>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:orientation="vertical"
+    android:background="@color/layoutBack">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layoutBack"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageReport"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:contentDescription="noPhoto"
+                android:textAlignment="center"
+                app:srcCompat="@drawable/mpt" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textLogin"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:hint="Логин"
+                android:textColorHint="@color/visible_hint"
+                android:backgroundTint="@color/textFieldBack"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                app:hintTextColor="@color/hintTextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editLogin"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/textColor"
+                    android:background="@drawable/separator" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:hint="Пароль"
+                android:textColorHint="@color/visible_hint"
+                android:backgroundTint="@color/textFieldBack"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                app:hintTextColor="@color/hintTextColor"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#60000000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="62dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/textColor"
+                    android:background="@drawable/separator"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textPovPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:hint="Повторите пароль"
+                android:textColorHint="@color/visible_hint"
+                android:backgroundTint="@color/textFieldBack"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                app:hintTextColor="@color/hintTextColor"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#60000000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPovPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="62dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/textColor"
+                    android:background="@drawable/separator"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textLastName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:hint="Фамилия"
+                android:textColorHint="@color/visible_hint"
+                android:backgroundTint="@color/textFieldBack"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                app:hintTextColor="@color/hintTextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editLastName"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/textColor"
+                    android:background="@drawable/separator" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFirstName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:hint="Имя"
+                android:textColorHint="@color/visible_hint"
+                android:backgroundTint="@color/textFieldBack"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                app:hintTextColor="@color/hintTextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editFirstName"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/textColor"
+                    android:background="@drawable/separator" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textMiddleName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:hint="Отчество"
+                android:textColorHint="@color/visible_hint"
+                android:backgroundTint="@color/textFieldBack"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                app:hintTextColor="@color/hintTextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editMiddleName"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/textColor"
+                    android:background="@drawable/separator" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinnerRole"
+                android:layout_width="300dp"
+                android:layout_height="63sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReg"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/buttonColor"
+                android:text="Зарегестрироваться"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:translationZ="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

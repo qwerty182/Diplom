@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminInfoActivity"
+    android:background="@color/layoutBack">
+
+    <ImageView
+        android:id="@+id/imageUserEditAd"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="noPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_insert_photo_24"
+        android:background="@drawable/image_back" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLoginAd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/visible_hint"
+        android:backgroundTint="@color/textFieldBack"
+        app:boxStrokeColor="@color/boxStrokeColor"
+        app:hintTextColor="@color/hintTextColor"
+        android:hint="Логин"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textLastNameAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editLoginAd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:background="@drawable/separator"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLastNameAd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/visible_hint"
+        android:backgroundTint="@color/textFieldBack"
+        app:boxStrokeColor="@color/boxStrokeColor"
+        app:hintTextColor="@color/hintTextColor"
+        android:hint="Фамилия"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textFirstNameAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editLastNameAd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:background="@drawable/separator"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFirstNameAd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/visible_hint"
+        android:backgroundTint="@color/textFieldBack"
+        app:boxStrokeColor="@color/boxStrokeColor"
+        app:hintTextColor="@color/hintTextColor"
+        android:hint="Имя"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textMiddleNameAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editFirstNameAd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:background="@drawable/separator"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textMiddleNameAd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/visible_hint"
+        android:backgroundTint="@color/textFieldBack"
+        app:boxStrokeColor="@color/boxStrokeColor"
+        app:hintTextColor="@color/hintTextColor"
+        android:hint="Отчество"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveUserAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editMiddleNameAd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:background="@drawable/separator"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveUserAd"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="@color/buttonColor"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:text="Сохранить изменения"
+        android:textAlignment="center"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHistoryAd"
+        android:layout_width="172dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Просмотр всех отчетов"
+        android:textAlignment="center"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:translationZ="5dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExitAd"
+        android:layout_width="172dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Выйти с аккаунта"
+        android:textAlignment="center"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:translationZ="5dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUserAd"
+        android:layout_width="172dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Запросы на регистрацию"
+        android:textAlignment="center"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:translationZ="5dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

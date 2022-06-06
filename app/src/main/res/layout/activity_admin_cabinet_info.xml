@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCabinetInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/layoutBack">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layoutBack"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="35dp"
+                android:inputType="textMultiLine"
+                android:text="Информация о кабинете"
+                android:textColor="@color/textColor"/>
+
+            <ImageView
+                android:id="@+id/imageCabinetAd"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:contentDescription="noPhoto"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/ic_baseline_insert_photo_24"
+                android:background="@drawable/image_back"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:translationZ="5dp"
+                app:cardBackgroundColor="@color/cardView"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageCabinetAd">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="left"
+                        android:text="Кабинет"
+                        android:textColor="@color/visible_hint"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/textCabinetNumAd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Номер кабинета"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/visible_hint"/>
+
+                    <TextView
+                        android:id="@+id/textViewTitleBuild"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="left"
+                        android:text="Здание"
+                        android:textColor="@color/visible_hint"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/textBuildAd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Здание"
+                        android:inputType="textMultiLine"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/visible_hint"/>
+
+                    <TextView
+                        android:id="@+id/textViewTitleInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="left"
+                        android:text="Общая информация"
+                        android:textColor="@color/visible_hint"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/textGeneralInfoAd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Общая информация"
+                        android:inputType="textMultiLine"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditCabinet"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="Изменить кабинет"
+                android:textAlignment="center"
+                android:backgroundTint="@color/buttonColor"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:translationZ="5dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewReport"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="Посмотреть отчеты"
+                android:textAlignment="center"
+                android:backgroundTint="@color/buttonColor"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:translationZ="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
